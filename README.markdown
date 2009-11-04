@@ -13,13 +13,13 @@ Usage
 
     process.mixin(require('simplicity'));
 
-    expect('a test that finishes', function() {
+    expect('a test that finishes', function(ok) {
       setTimeout(function() {
         ok();
       }, 100);
     });
 
-    expect('a test that finishes in < 200ms', function() {
+    expect('a test that finishes in < 200ms', function(ok) {
       setTimeout(function() {
         ok();
       }, 100);
