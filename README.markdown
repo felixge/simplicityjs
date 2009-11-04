@@ -11,16 +11,16 @@ Put lib/simplicty.js in your test folder or make sure it can be reached from you
 Usage
 -----
 
-  process.mixin(require('simplicity'));
+    process.mixin(require('simplicity'));
 
-  expect('a test that finishes', function() {
-    setTimeout(function() {
-      ok();
-    }, 100);
-  });
+    expect('a test that finishes', function() {
+      setTimeout(function() {
+        ok();
+      }, 100);
+    });
 
-  expect('a test that finishes in < 200ms', function() {
-    setTimeout(function() {
-      ok();
-    }, 100);
-  }).timeout(200);
+    expect('a test that finishes in < 200ms', function() {
+      setTimeout(function() {
+        ok();
+      }, 100);
+    }).timeout(200);
